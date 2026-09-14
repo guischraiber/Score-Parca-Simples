@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Score Parça — Eletroshow Outl</title>
+<style>
+:root {
+  --laranja:#F97316; --azul:#2563EB; --verde:#16A34A; --vermelho:#DC2626;
+  --amarelo:#CA8A04; --fundo:#F8F7F4; --card:#FFFFFF;
+  --borda:#E5E3DF; --cinzaTexto:#6B7280; --texto:#1C1917;
+}
+* { box-sizing: border-box; }
+body { margin:0; padding:0; background:var(--fundo); color:var(--texto);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 32px 24px 64px; }
+.header { display:flex; align-items:center; gap:14px; margin-bottom:28px; }
+.logo-dot { width:14px; height:14px; border-radius:50%; background:var(--laranja); flex-shrink:0; }
+h1 { font-size:22px; margin:0; }
+.subtitle { color:var(--cinzaTexto); font-size:13px; margin-top:2px; }
+.card { background:var(--card); border:1px solid var(--borda); border-radius:14px; padding:22px 24px; margin-bottom:20px; }
+table { width:100%; border-collapse:collapse; font-size:13.5px; }
+th, td { text-align:left; padding:10px 12px; border-bottom:1px solid var(--borda); }
+th { font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--cinzaTexto); font-weight:700; }
+tr:last-child td { border-bottom:none; }
+a { color:var(--azul); text-decoration:none; }
+a:hover { text-decoration:underline; }
+.badge { display:inline-block; padding:3px 11px; border-radius:20px; font-size:12px; font-weight:700; color:#fff; white-space:nowrap; }
+.nota-pill { display:inline-block; min-width:22px; text-align:center; padding:2px 8px; border-radius:6px; font-weight:700; color:#fff; font-size:12.5px; }
+.num { font-variant-numeric: tabular-nums; text-align:right; }
+.muted { color:var(--cinzaTexto); }
+.back-link { display:inline-block; margin-bottom:18px; font-size:13px; }
+@media print {
+  body { background:#fff; }
+  .no-print { display:none !important; }
+  .card { border:none; box-shadow:none; padding:0; margin-bottom:16px; }
+  .wrap { padding: 0; max-width:100%; }
+}
+</style></head>
+<body><div class="wrap">
+  <a class="back-link no-print" href="index.html">&larr; Voltar ao índice</a>
+
+  <div class="header">
+    <div class="logo-dot"></div>
+    <div>
+      <h1>Eletroshow Outl</h1>
+      <div class="subtitle">Performance de reversa · Ciclo Julho + Agosto + Setembro 2026 (setembro pendente)</div>
+    </div>
+  </div>
+
+  <div class="card" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;">
+    <div>
+      <div class="subtitle" style="margin-bottom:4px;">Nota Final acumulada do ciclo</div>
+      <div style="font-size:40px; font-weight:800;">4.21<span class="muted" style="font-size:18px;"> / 5,00</span></div>
+    </div>
+    <div style="text-align:right;">
+      <span class="badge" style="background:#16A34A; font-size:14px; padding:6px 16px;">Satisfatório</span>
+      <div class="subtitle" style="margin-top:8px;">Consequência na taxa:
+        <strong style="color:#16A34A">-1.50%</strong>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <table>
+      <thead><tr>
+        <th>Indicador</th>
+        <th class="num">% Julho</th><th class="num">Nota Jul</th>
+        <th class="num">% Agosto</th><th class="num">Nota Ago</th>
+        <th class="num">Nota Acumulada</th>
+      </tr></thead>
+      <tbody>
+    <tr>
+      <td>SLA Reversa <span class="muted">(N1 &lt;80% · N2 80-85% · N3 85-90% · N4 90-95% · N5 &ge;95%)</span></td>
+      <td class="num">93.5%</td>
+      <td class="num"><span class="nota-pill" style="background:#16A34A">4</span></td>
+      <td class="num">86.2%</td>
+      <td class="num"><span class="nota-pill" style="background:#CA8A04">3</span></td>
+      <td class="num" style="font-weight:700;">3.69</td>
+    </tr>
+    <tr>
+      <td>Agendamento <span class="muted">(N1 &lt;90% · N2 90-93% · N3 93-95% · N4 95-98% · N5 &ge;98%)</span></td>
+      <td class="num">95.7%</td>
+      <td class="num"><span class="nota-pill" style="background:#16A34A">4</span></td>
+      <td class="num">100.0%</td>
+      <td class="num"><span class="nota-pill" style="background:#15803D">5</span></td>
+      <td class="num" style="font-weight:700;">4.31</td>
+    </tr>
+    <tr>
+      <td>CSAT (share 4-5) <span class="muted">(N1 &lt;80% · N2 80-85% · N3 85-90% · N4 90-95% · N5 &ge;95%)</span></td>
+      <td class="num">100.0%</td>
+      <td class="num"><span class="nota-pill" style="background:#15803D">5</span></td>
+      <td class="num">100.0%</td>
+      <td class="num"><span class="nota-pill" style="background:#15803D">5</span></td>
+      <td class="num" style="font-weight:700;">5.00</td>
+    </tr></tbody>
+    </table>
+    
+  </div>
+
+  <div class="card">
+    <table>
+      <thead><tr><th>Nota Final</th><th class="num">Julho</th><th class="num">Agosto</th><th class="num">Acumulado</th></tr></thead>
+      <tbody><tr>
+        <td class="muted">Nota SLA×50% + Nota Agend.×20% + Nota CSAT×30%</td>
+        <td class="num">4.30</td>
+        <td class="num">4.00</td>
+        <td class="num" style="font-weight:700;">4.21</td>
+      </tr></tbody>
+    </table>
+  </div>
+
+  <button class="no-print" onclick="window.print()" style="background:var(--laranja); color:#fff; border:none; padding:12px 22px; border-radius:10px; font-size:14px; font-weight:700; cursor:pointer;">
+    🖨️ Imprimir / Salvar como PDF
+  </button>
+</div></body></html>
